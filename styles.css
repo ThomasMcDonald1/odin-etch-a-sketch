@@ -1,0 +1,44 @@
+
+#main-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#grid-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 600px;
+    max-height: 600px;
+
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    border-color: rgb(0, 0, 0);
+    
+}
+
+.grid-column
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.grid-cell
+{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: rgb(99, 15, 233);
+    height: 100%;
+}
