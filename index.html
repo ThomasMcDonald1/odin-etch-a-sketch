@@ -9,8 +9,48 @@
 </head>
 <body>
     <div id="main-container">
-        <div id="grid-container">
+        <div id="sketch-header">
+            <p class="header-text">Etch-A-Sketch</p>
+        </div>
+        <div id="interactives">
+            <div id="sketch-configuration">
+                <div class="config-align">
+                    <button class="config-button-color" id="pen-color-picker"></button>
+                    <p class="config-text">Pen Color</p>
+                </div>
+                <div class="config-align">
+                    <button class="config-button-color" id="grid-color-picker"></button>
+                    <p class="config-text">Grid Color</p>
+                </div>
+                <div class="config-align">
+                    <button class="config-button-color" id="grid-color-picker"></button>
+                    <p class="config-text">Background Color</p>
+                </div>
+            </div>
+            <div id="grid-container"></div>
+            <div id="sketch-configuration">
+                <button class="toggle-button">
+                    <span class="config-text-toggle">Show Grid</span>
+                </button>
+                <button class="toggle-button">
+                    <span class="config-text-toggle">Clear Sketch</span>
+                </button>
+                <button class="toggle-button">
+                    <span class="config-text-toggle">Eraser</span>
+                </button>
+                <button class="toggle-button">
+                    <span class="config-text-toggle">Rainbow Mode</span>
+                </button>
+            </div>
+        </div>
         
+        <!-- <input type="range" min="1" max="100" value="16" oninput="rangeValue.innerText = this.value"><p id="rangeValue">100</p> -->
+        <div class="slider-background">
+            <div class="cell-slider-container">
+                <span class="bar"><span class="fill"></span></span>
+                <input class="cell-slider" type="range" min="1" max="100" value="16">
+            </div>
+            <span class="slider-text"></span>
         </div>
     </div>
 </body>
