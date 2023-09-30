@@ -10,36 +10,36 @@
 <body>
     <div id="main-container">
         <div id="sketch-header">
-            <p class="header-text">Etch-A-Sketch</p>
+            <p id="header-text">Etch-A-Sketch</p>
         </div>
         <div id="interactives">
             <div id="sketch-configuration">
                 <div class="config-align">
-                    <button class="config-button-color" id="pen-color-picker"></button>
+                    <input type="color" class="config-button-color" id="pen-color-picker" value="#999999"></button>
                     <p class="config-text">Pen Color</p>
                 </div>
                 <div class="config-align">
-                    <button class="config-button-color" id="grid-color-picker"></button>
+                    <input type="color" class="config-button-color" id="grid-color-picker" value="#555555"></button>
                     <p class="config-text">Grid Color</p>
                 </div>
                 <div class="config-align">
-                    <button class="config-button-color" id="grid-color-picker"></button>
+                    <input type="color" class="config-button-color" id="background-color-picker" value="#df0000"></button>
                     <p class="config-text">Background Color</p>
                 </div>
             </div>
             <div id="grid-container"></div>
             <div id="sketch-configuration">
-                <button class="toggle-button">
-                    <span class="config-text-toggle">Show Grid</span>
-                </button>
-                <button class="toggle-button">
-                    <span class="config-text-toggle">Clear Sketch</span>
-                </button>
-                <button class="toggle-button">
+                <button class="config-button" id="eraser">
                     <span class="config-text-toggle">Eraser</span>
                 </button>
-                <button class="toggle-button">
-                    <span class="config-text-toggle">Rainbow Mode</span>
+                <button class="config-button" id="toggle-grid">
+                    <span class="config-text-toggle" id="toggle-grid-text">Hide Grid</span>
+                </button>
+                <button class="config-button" id="clear-sketch">
+                    <span class="config-text-toggle">Clear Sketch</span>
+                </button>
+                <button class="config-button" id="toggle-rainbow">
+                    <span class="config-text-toggle" id="toggle-rainbow-text">Normal Mode</span>
                 </button>
             </div>
         </div>
@@ -48,9 +48,16 @@
         <div class="slider-background">
             <div class="cell-slider-container">
                 <span class="bar"><span class="fill"></span></span>
-                <input class="cell-slider" type="range" min="1" max="100" value="16">
+                <input class="cell-slider" type="range" min="1" max="60" value="16">
             </div>
             <span class="slider-text"></span>
+        </div>
+        <div class="spacer"></div>
+        <div id="footer">
+            <p id="footer-text">Copyright 2023 ThomasMcDonald1</p>
+            <a href="https://github.com/ThomasMcDonald1" class="socials-item">
+                <img class="socials-item-img" src="./images/github-icon.png" alt="">
+            </a>
         </div>
     </div>
 </body>
